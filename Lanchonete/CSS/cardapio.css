@@ -1,0 +1,90 @@
+.cardapio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.area-cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 50px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 350px;
+    gap: 18px;
+    padding: 20px;
+    background-color: var(--color-primary-1);
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+.area-imagem{
+    width: 250px;
+    height: 200px;   
+    margin-top: 12%; 
+}
+.area-imagem img{
+    width: 100%;
+    border-radius: 10%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-heart{
+    position: absolute;
+    background-color: var(--color-primary-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    color: var(--color-primary-2);
+    font-size: 1.563rem;
+    right: -8px;
+    top: -8px;
+    border-radius: 0px 37.5px 0px 42.5px;
+}
+.card-title{
+    font-size: 1.5rem;
+    color: var(--color-primary-5);
+    padding: 5px;
+    text-align: center;
+}
+.card-descricao{
+    color: rgb(75,73,73);
+    text-align: center;
+}
+.card-rate i{
+    color: var(--color-primary-6);
+}
+.card-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .card{
+        width: 220px;
+    }
+    .area-imagem{
+        width: 180px;
+        height: 120px;
+    }
+    .card-heart{
+        height: 45px;
+        width: 45px;
+        font-size: 1rem;
+        top: -4px;
+        right: -4px;
+    }
+}

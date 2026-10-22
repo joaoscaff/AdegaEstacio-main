@@ -1,0 +1,83 @@
+@import url('menu.css');
+@import url('home.css');
+@import url('cardapio.css');
+@import url('avaliacao.css');
+@import url('footer.css');
+
+:root{
+    --color-primary-1: #F3ECEC;
+    --color-primary-2: #D7B1B8;
+    --color-primary-3: #A33A4A;
+    --color-primary-4: #6B0F1E;
+    --color-primary-5: #3B0A12;
+    --color-primary-6: #e3ab10;
+
+    --color-neutra-1:#1d1d1d;
+    --color-neutra-2:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.btn-default{
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: var(--color-primary-2);
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px rgba(255, 0, 195, 0.619);
+    transition: 0.3s ease;
+}
+.btn-default:hover{
+    background-color: var(--color-primary-5);
+    color: var(--color-primary-1);
+}
+.social-media-buttons{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    font-size: 1.8rem;
+    gap: 20px;
+    /* background-color: red; */
+}
+.social-media-buttons a{
+    color: var(--color-primary-5);    
+}
+.social-media-buttons a:hover{
+    color: var(--color-primary-2);
+}
+
+.section-title{
+    color: var(--color-primary-5);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.section-subtitle{
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .section-title{
+        font-size: 1rem;
+    }
+    .section-subtitle{
+        font-size: 0.6rem;
+    }
+}
